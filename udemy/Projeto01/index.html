@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto com Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo de estilos CSS -->
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">MeuProjeto</a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-white hover:bg-blue-600 px-4 py-2 rounded-md">Home</a>
+                <a href="#sobre" class="text-white hover:bg-blue-600 px-4 py-2 rounded-md">Sobre</a>
+                <a href="#contato" class="text-white hover:bg-blue-600 px-4 py-2 rounded-md">Contato</a>
+            </div>
+            <!-- Menu para dispositivos móveis -->
+            <div class="md:hidden">
+                <button id="menuToggle" class="text-white text-2xl">
+                    &#9776; <!-- Ícone de menu (hamburguer) -->
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu de navegação para dispositivos móveis -->
+    <div id="mobileMenu" class="md:hidden hidden bg-blue-500 p-4 space-y-2">
+        <a href="#" class="text-white hover:bg-blue-600 px-4 py-2 rounded-md block">Home</a>
+        <a href="#sobre" class="text-white hover:bg-blue-600 px-4 py-2 rounded-md block">Sobre</a>
+        <a href="#contato" class="text-white hover:bg-blue-600 px-4 py-2 rounded-md block">Contato</a>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="p-6 text-center">
+        <h1 class="text-3xl font-bold mb-4">Bem-vindo ao Meu Projeto!</h1>
+        <p id="mensagem" class="text-lg">Clique no botão para ver a mensagem.</p>
+        <button id="btnMensagem" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">Mostrar Mensagem</button>
+    </main>
+
+    <footer class="bg-blue-500 text-white p-4 text-center mt-10">
+        <p>&copy; 2024 Meu Projeto</p>
+    </footer>
+
+    <!-- Inclusão do arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
