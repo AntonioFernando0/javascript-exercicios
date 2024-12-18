@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto com Tailwind</title>
+    <title>PinhoBurguer</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo de estilos CSS -->
+    <link rel="shortcut icon" href="sources/lunch_dining_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon">
 </head>
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Navbar -->
     <nav class="bg-blue-500 p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-white text-2xl font-bold">MeuProjeto</a>
+            <a href="#" class="text-white text-2xl font-bold"> <img class="burguer" src="sources/4479138.png" alt="">  </a>
             <div class="hidden md:flex space-x-4">
                 <a href="#" class="text-white hover:bg-blue-600 px-4 py-2 rounded-md">Home</a>
                 <a href="#sobre" class="text-white hover:bg-blue-600 px-4 py-2 rounded-md">Sobre</a>
@@ -36,7 +38,7 @@
 
     <!-- Conteúdo Principal -->
     <main class="p-6 text-center">
-        <h1 class="text-3xl font-bold mb-4">Bem-vindo ao Meu Projeto!</h1>
+        <h1 class="text-3xl font-bold mb-4">PinhoBurguer</h1>
         <p id="mensagem" class="text-lg">Clique no botão para ver a mensagem.</p>
         <button id="btnMensagem" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">Mostrar Mensagem</button>
     </main>

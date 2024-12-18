@@ -21,6 +21,11 @@ header {
     text-align: center;
 }
 
+.burguer{
+
+    max-width: 100%;
+    height: auto;
+}
 /* Estilos para o conteúdo principal */
 main {
     padding: 20px;
