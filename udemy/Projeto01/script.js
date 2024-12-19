@@ -14,3 +14,18 @@ const mensagem = document.getElementById('mensagem');
 btnMensagem.addEventListener('click', () => {
     mensagem.textContent = "Mensagem exibida com sucesso!";
 });
+  // Lógica para alternar o menu de navegação para dispositivos móveis
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+  });
+
+  // Animações na imagem com javascript
+
+  window.onload = () => {
+    const image = document.querySelector('#imagem');
+    image.classList.add('imagem'); // A imagem começa a balançar assim que a página carrega
+  };
+  
