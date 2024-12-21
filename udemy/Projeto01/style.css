@@ -20,7 +20,7 @@ header {
     padding: 20px;
     text-align: center;
 }
-#imagem{
+.img{
 height: auto;
 border-radius: 15px;
 display: block;
