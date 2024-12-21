@@ -24,8 +24,38 @@ btnMensagem.addEventListener('click', () => {
 
   // Animações na imagem com javascript
 
-  window.onload = () => {
-    const image = document.querySelector('#imagem');
-    image.classList.add('imagem'); // A imagem começa a balançar assim que a página carrega
-  };
+ 
+
+  const carrossel = document.querySelector('.carrossel');
+  const slides = document.querySelectorAll('.slide');
+  const btnPrev = document.getElementById('btn-prev');
+  const btnNext = document.getElementById('btn-next');
+  
+  let index = 0;
+  
+  function showSlide(index) {
+      const totalSlides = slides.length;
+      if (index < 0) {
+          index = totalSlides - 1; // Volta para o último slide
+      } else if (index >= totalSlides) {
+          index = 0; // Volta para o primeiro slide
+      }
+      carrossel.style.transform = `translateX(-${index * 100}%)`;
+      return index;
+  }
+  
+  btnPrev.addEventListener('click', () => {
+      index = showSlide(index - 1);
+  });
+  
+  btnNext.addEventListener('click', () => {
+      index = showSlide(index + 1);
+  });
+  
+  // Opcional: Mover automaticamente os slides a cada 5 segundos
+  setInterval(() => {
+      index = showSlide(index + 1);
+  }, 5000);
+
+
   

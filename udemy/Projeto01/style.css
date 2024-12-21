@@ -20,33 +20,26 @@ header {
     padding: 20px;
     text-align: center;
 }
-
 #imagem{
+height: auto;
+border-radius: 15px;
+display: block;
+margin: auto;
+width: 500px;
         
-        height: auto;
-        border-radius: 15px;
-        display: block;
-        margin: auto;
+transition: transform 0.5s;
+animation: shake-animation 0.5s ease;
+}
 
-        width: 500px;
-        
-        transition: transform 0.5s;
-        animation: shake-animation 0.5s ease;
-  }
-  
-  @keyframes shake-animation {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-10px); }
-    50% { transform: translateX(10px); }
-    75% { transform: translateX(-10px); }
-    100% { transform: translateX(0); }
-  }
-  
-    
+@keyframes shake-animation {
+0% { transform: translateX(0); }
+25% { transform: translateX(-10px); }
+50% { transform: translateX(10px); }
+75% { transform: translateX(-10px); }
+100% { transform: translateX(0); }
+}
 
 
-
-  
 /* Estilos para o conteúdo principal */
 main {
     padding: 20px;
