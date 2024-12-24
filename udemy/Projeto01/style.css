@@ -20,45 +20,58 @@ header {
     padding: 20px;
     text-align: center;
 }
-.img{
-height: auto;
-border-radius: 15px;
-display: block;
-margin: auto;
-width: 500px;
-        
-transition: transform 0.5s;
-animation: shake-animation 0.5s ease;
+
+
+main{
+
+    background-image: url(sources/main2.jpeg);
+    background-size: cover;
+}
+/* Para as imagens*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo das setas */
+  border-radius: 50%; /* Tornar as setas arredondadas */
+  width: 40px;  /* Tamanho maior para as setas */
+  height: 40px; /* Tamanho maior para as setas */
 }
 
-@keyframes shake-animation {
-0% { transform: translateX(0); }
-25% { transform: translateX(-10px); }
-50% { transform: translateX(10px); }
-75% { transform: translateX(-10px); }
-100% { transform: translateX(0); }
-}
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+  }
 
+  .carousel-item img {
+    transition: transform 1s ease, opacity 1s ease;
+  }
 
-/* Estilos para o conteúdo principal */
-main {
-    padding: 20px;
-    text-align: center;
-}
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    transition: transform 1s ease;
+  }
 
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
+  .carousel-inner {
+    position: relative;
+  }
 
-button:hover {
-    background-color: #0056b3;
-}
+  /* Customizing controls */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
 
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
 /* Estilos para o rodapé */
 footer {
     text-align: center;
