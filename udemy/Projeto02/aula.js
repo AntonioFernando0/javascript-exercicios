@@ -20,6 +20,13 @@ document.getElementById('calculaBtn').addEventListener('click', function() {
     const media = soma / 2;
     const maiorQue =  Math.max(valor1, valor2)
     const nome = document.getElementById('nome').value;
+
+    function Verifica (valor1, valor2) {
+
+        if{
+            
+        }
+    }
     
    
 
