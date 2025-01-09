@@ -23,9 +23,9 @@ document.getElementById('calculaBtn').addEventListener('click', function() {
 
     function Verifica (valor1, valor2) {
 
-        if{
+        
             
-        }
+        
     }
     
    
@@ -33,3 +33,26 @@ document.getElementById('calculaBtn').addEventListener('click', function() {
     // Atualiza o resultado
     document.getElementById('result').textContent = `Meu nome é: ${nome}, A soma dos valores é: ${soma}, A média dos valores é: ${media}, O maior número é ${maiorQue}`;
 });
+
+
+
+/*Exemplos de funções*/
+
+function dizerOla() {
+    console.log("Olá, mundo")
+}
+
+/*Funções com parametros*/ 
+
+function cumprimentar(nome) {
+    console.log("Olá, " + nome + "!")
+}
+
+cumprimentar ("Ana")
+
+// Arrays
+
+let frutas = ["maça", "banana", "manga"];
+
+console.log(frutas[0])
+console.log(frutas[1])
