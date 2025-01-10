@@ -4,7 +4,7 @@
 
 
 
-document.getElementById('calculaBtn').addEventListener('click', function() {
+ document.getElementById('calculaBtn').addEventListener('click', function() {
     // Captura os valores dos inputs
     const valor1 = parseFloat(document.getElementById('input1').value);
     const valor2 = parseFloat(document.getElementById('input2').value);
@@ -24,9 +24,7 @@ document.getElementById('calculaBtn').addEventListener('click', function() {
     function Verifica (valor1, valor2) {
 
         
-            
-        
-    }
+            }
     
    
 
@@ -56,3 +54,88 @@ let frutas = ["maça", "banana", "manga"];
 
 console.log(frutas[0])
 console.log(frutas[1])
+
+
+// Criando um objeto 
+
+let pessoa = {
+    nome: "Fernando",
+    idade: 25,
+    cidade: "São Paulo"
+}
+
+console.log(pessoa.cidade);
+
+let livros = {
+
+    nome: "Ato atômicos",
+    paginas: 390,
+    autor: "Eder Machado"
+}
+console.log(livros.nome)
+
+let idade = 20 
+
+
+    
+function saberIdade (idade) {  if (idade > 18) {
+        console.log("Maior de idade")
+    }else{
+        console.log("Menor de idade")
+    }
+
+}
+saberIdade(idade);
+
+for (let i = 1; i <= 20; i++){
+    if (i % 2  !== 0) {
+        console.log(i)
+    }
+}
+
+for (let V = 0; V <= 10; V++) {
+    if (V + 2 == 4) {
+        console.log("A condição é verdadeira! V =", V);
+    }
+}
+
+let carros = {
+
+    nome: "FORD",
+    modelo: "RANGER",
+    ano: 2025
+}
+
+console.log(`Nome: ${carros.nome}, Modelo: ${carros.modelo}, Ano: ${carros.ano}`);
+
+let pessoas = {
+    nome: "Junior",
+    idade: 25,
+    endereco: {
+        rua: "Rua Prado",
+        bairro: "Urbis",
+        caminho: 7
+
+    }
+}
+
+console.log(pessoas.endereco.rua)
+console.log(pessoas.endereco.bairro)
+console.log(pessoas.endereco.caminho)
+
+for (let idade = 18; idade <= 28; idade++) {
+    console.log(idade);
+}
+
+let a = 200
+let b = 100
+
+const soma = a + b;
+const div = a / b;
+const sub = a - b;
+
+console.log(soma)
+console.log(div)
+console.log(sub)
+
+ 
